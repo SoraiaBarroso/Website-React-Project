@@ -1,0 +1,41 @@
+.feature{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+    width: 50%;
+}
+
+.feature-icon{
+    position: relative;
+    margin-right: 2rem;
+}
+
+.inner-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feature-text h3{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #3e97cf;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.feature-text p{
+    width: 60%;
+    line-height: 1.4;
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+@media screen and (max-width: 650px){
+    .feature-text p{
+        width: 90%;
+    }
+}

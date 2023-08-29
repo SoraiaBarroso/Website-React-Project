@@ -1,0 +1,131 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin: 0 3rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.logo-text span{
+    font-size: 4rem;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #5962f7 15%, #f4ba37 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-list{
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 0;
+    list-style: none;
+    padding: 0 2rem;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.nav-list a::after{
+    margin: 0;
+    content: "";
+    display: block;
+    height: .2rem;
+    width: 0;
+    background-color: #f4ba37;
+    transition: all .5s ease;
+}
+
+.nav-list a:hover::after{
+    width: 50%;
+}
+
+.nav-list a:hover{
+    margin: 0;
+    color: #f4ba37;
+}
+
+.navbar .menu-icons{
+    display: none;
+}
+
+@keyframes slide-in {
+    0%{transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes slide-out {
+    0%{transform: translateX(0);}
+    100% {transform: translateX(-100);}
+}
+
+@media screen and (max-width: 815px) {
+    .nav-list{
+        border: 1px solid white;
+        display: none;
+        padding: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-list a::after{
+        display: none;
+    }
+
+    .navbar .menu-icons{
+        display: block;
+    }
+
+    .navbar #nav-list-mobile, 
+    .navbar #nav-list-mobile-hide{
+        padding: .5rem 0;
+        display: block;
+        position: absolute;
+        left: 5%;
+        top: 8rem;
+        width: 90%;
+        transition: all .5s;
+    }
+
+    .navbar #nav-list-mobile{
+        animation: slide-in .5s ease-in-out;
+    }
+
+    .navbar #nav-list-mobile-hide{
+        animation: slide-out .5s ease-in-out;
+        left: -100%;
+    }
+
+    .navbar #nav-list-mobile li, 
+    .navbar #nav-list-mobile-hide li{
+        padding: 1.5rem 0;
+        border-bottom: 1px solid white;
+        margin: 0 2rem;
+    }
+
+    .navbar #nav-list-mobile li:last-child,
+    .navbar #nav-list-mobile-hide li:last-child{
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,131 @@
+.header{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.header-left{
+    width: 50%;
+}
+
+.header-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right img{
+    width: 75%;
+}
+
+.header h1{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.4rem;
+    line-height: 1.5;
+    color: white;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.header h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.header h1 span{
+    font-weight: lighter;
+}
+
+.header h1 span:first-child{
+    font-weight: 900;
+}
+
+.header h1 span:last-child {
+    color: #f4ba37;
+}
+
+.header p{
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+.header-btn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-btn a{
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.floating-icon{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #3e97cf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.mouse{
+    transform: translateY(-20%);
+    animation: floating .8s ease infinite alternate;
+}
+
+@keyframes floating {
+   100%{transform: translateY(20%);}
+}
+
+@media screen and (max-width: 850px){
+    .header h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .header-left,
+    .header-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-left{
+        margin-bottom: 3rem;
+    }
+    .header-right img{
+        width: 50%;
+    }
+    .header h1::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .floating-icon{
+        margin-top: 4rem;
+    }
+}
