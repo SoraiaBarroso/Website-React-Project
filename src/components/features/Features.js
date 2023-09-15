@@ -1,6 +1,6 @@
 import React from "react"
 import "./Features.css"
-import FeaturesImg from "../../assets/featuresImg.png"
+import FeaturesImg from "../../assets/feature.svg"
 import { ImBooks } from "react-icons/im"
 import {LiaRulerCombinedSolid} from "react-icons/lia"
 import {TbSeo} from "react-icons/tb"
@@ -15,7 +15,7 @@ function Features() {
         <section id="features">
             <div className="container features">
                 <div className="u-title">
-                    <ImBooks color="#f4ba37" size={30} className="icon"/>
+                    <ImBooks color="#00B0FF" size={30} className="icon"/>
                     <h2>- CORE FEATURES -</h2>
                     <p> TechX has Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit. Nullam mollis leo at dapibus dictum.

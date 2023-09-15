@@ -6,7 +6,7 @@ const Feature = ({icon, heading}) => {
   return (
     <div className='feature'>
         <div className='feature-icon'>
-            <BsHexagon color='#f4ba37' size={55}/>
+            <BsHexagon color='#00B0FF' size={55}/>
             <div className='inner-icon'>
                 {icon}
             </div>

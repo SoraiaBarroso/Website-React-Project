@@ -1,0 +1,47 @@
+#download{
+    background: rgb(62,151,207);
+    background: linear-gradient(110deg, rgba(62,151,207,1) 60%, rgba(14,251,255,1) 98%); 
+    height: 70vh;
+}
+
+.download{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.download h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 100;
+    padding: .5em 0em;
+    position: relative;
+}
+
+.download h1::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    width: 40%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.download p{
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.dwn-btns{
+    margin: 5em 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

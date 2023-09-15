@@ -27,10 +27,10 @@ const Navbar = () => {
             <a href='#features'>Features</a>
         </li>
         <li>
-            <a href='#'>Dowload</a>
+            <a href='#download'>Dowload</a>
         </li>
         <li>
-            <a href='#'>Subscribe</a>
+            <a href='#subscribe'>Subscribe</a>
         </li>
         <li>
             <a href='#'>Get Started</a>

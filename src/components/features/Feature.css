@@ -3,6 +3,12 @@
     align-items: flex-start;
     margin-bottom: 4rem;
     width: 50%;
+    padding-left: 5em;
+    transition: all .2s ease-in;
+}
+
+.feature:hover {
+    transform: scale(1.05);
 }
 
 .feature-icon{
@@ -27,7 +33,7 @@
 }
 
 .feature-text p{
-    width: 60%;
+    width: 100%;
     line-height: 1.4;
     font-size: 1rem;
     color: #333;
@@ -36,6 +42,10 @@
 
 @media screen and (max-width: 650px){
     .feature-text p{
-        width: 90%;
+        width: 100%;
+    }
+    .feature{
+        width: 70%;
+        padding: 0;
     }
 }

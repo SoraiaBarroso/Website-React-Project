@@ -15,14 +15,14 @@
 }
 
 .features-left img{
-    width: 65%;
+    width: 70%;
 }
 
 .features-right{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
 }
 

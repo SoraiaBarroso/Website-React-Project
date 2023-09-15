@@ -1,7 +1,9 @@
 import React from 'react'
 import "./Header.css"
 import imgHeader from "../../assets/headerImg.png"
+import svgHeader from "../../assets/svg.svg"
 import { BsMouse } from "react-icons/bs"
+
 
 // Button template so we dont have to create it over and over again
 import Button from "../UI/button/Button"
@@ -26,7 +28,7 @@ const Header = () => {
           </div>
         </div>
         <div className='header-right'>
-          <img src={imgHeader} alt='Header'></img>
+          <img src={svgHeader} alt='Header'></img>
         </div>
       </div>
       <div className='floating-icon'>
