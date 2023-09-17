@@ -1,11 +1,17 @@
 #subscribe{
     width: 100%;
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/bk.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .susbcribe{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,50 +20,67 @@
 
 .susbcribe h1{
     text-align: center;
-    color: #00B0FF;
+    color: #fff;
     font-size: 3.5em;
     font-weight: 100;
-    margin-bottom: 2em;
+    margin: 1.4em 0;
 }
 
 form{
+    position: relative;
     width: 30em;
     height: 4em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 1em;
     padding: 0 1em;
+    background: transparent;
+    width: 80%;
+    height: 100%;
+    border: .5px solid #fff;
+    color: #fff;
+    border-radius: 0.5em 0 0 0.5em;
+    outline: none;
 }
 
 button{
-    position: absolute;
     background-color: #00B0FF;
-    right: 0;
-    top: 0;
+    border: 1px solid #00B0FF;
     width: 20%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 1em;
+    border-radius: 0 .5em 0.5em 0;
     cursor: pointer;
     color: #fff;
+    font-weight: 500;
     transition: all .5s ease;
 }
 
-
-button:focus{
+button:hover{
     box-shadow: rgba(46, 217, 240, 0.4) 0px 5px, rgba(46, 201, 240, 0.3) 0px 10px, rgba(46, 217, 240, 0.2) 0px 15px, rgba(46, 208, 240, 0.1) 0px 20px, hsla(193, 87%, 56%, 0.05) 0px 25px;
-    width: 100%;
 }
 
+.social-icon{
+    margin: 4em 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-sb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    opacity: .6;
+}
+
+.icon-sb:hover{
+    opacity: 1;
+}

@@ -40,12 +40,22 @@
     margin: 0;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 850px){
     .feature-text p{
-        width: 100%;
+        width: 60%;
     }
     .feature{
-        width: 70%;
+        width: 100%;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .feature{
+        width: 60%;
+        padding: 0;
+    }
+    .feature-text p{
+        width: 100%;
     }
 }
