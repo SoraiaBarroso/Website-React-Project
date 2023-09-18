@@ -9,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 .susbcribe{
@@ -50,7 +51,7 @@ button{
     background-color: #00B0FF;
     border: 1px solid #00B0FF;
     width: 20%;
-    height: 100%;
+    height: 103%;
     border-radius: 0 .5em 0.5em 0;
     cursor: pointer;
     color: #fff;
@@ -71,6 +72,7 @@ button:hover{
 }
 
 .icon-sb{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,4 +85,90 @@ button:hover{
 
 .icon-sb:hover{
     opacity: 1;
+}
+
+.subs-panel{
+    width: 50%;
+    height: 30em;
+    background-color: #fff;
+    position: absolute;
+    top: -50%;
+    border-radius: .5em;
+    border: 2px solid rgba(19, 55, 113, 0.957);
+    box-shadow:blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(45, 57, 242) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(83, 93, 247) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(151, 175, 249) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(179, 224, 247) 40px -40px;
+}
+
+.mail-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    border: 2px solid rgba(19, 55, 113, 0.957);
+    border-radius: 50%;
+}
+
+.window-subs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.close-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em 1em;
+    cursor: pointer;
+}
+
+.img-email{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.img-email img{
+    width: 80%;
+}
+
+.text-email{
+    width: 50%;
+    text-align: center;
+    color: #333;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-email p{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.4;
+    width: 85%;
+}
+
+.text-email h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 300;  
+    position: relative; 
+    padding: .3em 0; 
+}
+
+.text-email h1::after{
+    content: "";
+    height: 2px;
+    width: 65%;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 18%;
 }
