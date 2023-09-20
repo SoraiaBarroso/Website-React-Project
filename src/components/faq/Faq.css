@@ -1,7 +1,10 @@
 .faq{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f4f7fa;
 }
 
 .container-grid{
@@ -10,7 +13,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 25em 25em;
+    grid-template-rows: 25em 25em;   
 }
 
 .grid-item{
@@ -20,7 +23,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: all .4s ease;
+    transition: all .2s ease;
+}
+
+.grid-item img{
+    width: 20%;
+}
+
+.grid-item h1{
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+.grid-item p{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+    width: 80%;
 }
 
 .grid-item:hover{
