@@ -49,10 +49,14 @@
 }
 
 @media screen and (max-width: 850px){
+    .download h1{
+        font-size: 3em;
+    }
     .dwn-btns{
         width: 100%;
     }
     .download p{
+        font-size: 1.3em;
         width: 80%;
     }
 }

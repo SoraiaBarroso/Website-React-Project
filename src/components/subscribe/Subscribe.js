@@ -1,32 +1,22 @@
 import "./Subscribe.css"
 
-import EmailImg from "../../assets/mail.svg"
-import {AiOutlineClose} from "react-icons/ai"
 import {AiOutlineTwitter} from "react-icons/ai"
 import {AiOutlineInstagram} from "react-icons/ai"
 import {BiLogoFacebookCircle} from "react-icons/bi"
-import { useState } from "react"
 
 const Subscribe = () => {
 
-    const [showWindow, setShowWindow] = useState(false);
-
     function HandleBtn(e) {
-        setShowWindow(true);
         e.preventDefault();
     }   
-
-    function CloseWindow() {
-        setShowWindow(false);
-    }
 
     return(
         <section id="subscribe">
             <div className="container susbcribe">
                 <h1>SUBSCRIBE NOW!</h1>
-                <form>
-                    <input type="email" name="email" placeholder="techx@hotmail.com" required/>
-                    <button onClick={HandleBtn}>Send</button>
+                <form action="" method="POST">
+                    <input className="input-email" type="email" name="email" pattern=".+@gmail\.com" size={30} placeholder="techx@gmail.com" required/>
+                    <input className="btn-input" type="submit" onClick={HandleBtn} value="Send"/>
                 </form>
             </div>
             <div className="social-icon">
@@ -40,22 +30,6 @@ const Subscribe = () => {
                     <BiLogoFacebookCircle size={25} color="white"/>
                 </div>
             </div>
-            {
-                showWindow === true ? 
-                <div className="subs-panel">
-                    <div className="window-subs">
-                        <div className="img-email">
-                            <img src={EmailImg} alt="mail img"></img>
-                        </div>
-                        <div className="text-email">
-                            <h1>Thank you!</h1>
-                            <p>Your will receive emails with the latest news about our project</p>
-                        </div>
-                        <AiOutlineClose onClick={CloseWindow} className="close-icon" size={25} color="rgba(19, 55, 113, 0.957)"/>
-                    </div>
-                </div> 
-                : <div></div>
-            }
         </section>
     )
 }

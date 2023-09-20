@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar, Header, Features, Download, Subscribe} from "./components";
+import {Navbar, Header, Features, Download, Subscribe, Faq} from "./components";
 
 // props are like arguments in functions
 function App() {
@@ -12,6 +12,7 @@ function App() {
       < Features/>
       < Download/>
       < Subscribe />
+      < Faq />
     </main>
   );
 }

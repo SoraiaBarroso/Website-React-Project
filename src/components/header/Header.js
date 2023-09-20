@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Header.css"
-import imgHeader from "../../assets/headerImg.png"
 import svgHeader from "../../assets/svg.svg"
 import { BsMouse } from "react-icons/bs"
 

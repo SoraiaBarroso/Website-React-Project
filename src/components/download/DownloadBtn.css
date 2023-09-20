@@ -18,3 +18,12 @@
     cursor: pointer;
     background-color: #ffffff5b;
 }
+
+@media screen and (max-width: 850px){
+    .btn-dwn{
+        width: 9em;
+    }
+    .name{
+        font-size: 1em;
+    }
+}
