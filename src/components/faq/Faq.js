@@ -1,37 +1,28 @@
 import "./Faq.css"
 
-import faqImg from "../../assets/faq.svg"
 import rocket from "../../assets/rocket.png"
+import pc from "../../assets/pc.png"
+import user from "../../assets/add-user.png"
+import bot from "../../assets/bot.png"
+import workspace from "../../assets/workspace.png"
+import tutorial from "../../assets/video-tutorials.png"
 
+import GridItem from "./GridItem"
 
 const Faq = () => {
   return (
     <section id="faq">
         <div className="container faq"> 
-            <div className="container-grid">
-                <div className="grid-item">
-                    <img src={rocket} alt="img"></img>
-                    <h1>Getting started</h1>
-                    <p>Te damos la bienvenida a Slack, nos alegramos de verte. Y ahora, manos a la obra.</p>
-                </div>
-                <div className="grid-item">
-                    <img src={rocket} alt="img"></img>
-                    <h1>Getting started</h1>
-                    <p>Te damos la bienvenida a Slack, nos alegramos de verte. Y ahora, manos a la obra.</p>
-                </div>
-                <div className="grid-item">
-                    <img src={rocket} alt="img"></img>
-                    <h1>Getting started</h1>
-                    <p>Te damos la bienvenida a Slack, nos alegramos de verte. Y ahora, manos a la obra.</p>
-                </div>
-                <div className="grid-item">
-                    <img src={rocket} alt="img"></img>
-                    <h1>Getting started</h1>
-                    <p>Te damos la bienvenida a Slack, nos alegramos de verte. Y ahora, manos a la obra.</p>
-                </div>
-            </div>
             <div className="container-right">
-                <img src={faqImg}></img>
+                <h1>Getting Started</h1>
+            </div>
+            <div className="container-grid">
+                <GridItem img={rocket} title={"First steps"} />
+                <GridItem img={pc} title={"Use our app"} />
+                <GridItem img={user} title={"Your profile"} />
+                <GridItem img={bot} title={"Automate tasks"} />
+                <GridItem img={workspace} title={"Workspace administration"} />
+                <GridItem img={tutorial} title={"Tutorials"} />
             </div>
         </div>
     </section>

@@ -33,7 +33,7 @@ const Navbar = () => {
             <a href='#subscribe'>Subscribe</a>
         </li>
         <li>
-            <a href='#'>Get Started</a>
+            <a href='#faq'>Get Started</a>
         </li>
       </ul>
       <div className='menu-icons' onClick={toggleMenu}>
