@@ -1,5 +1,7 @@
 import "./Faq.css"
 
+import { ImBooks } from "react-icons/im"
+
 import rocket from "../../assets/rocket.png"
 import pc from "../../assets/pc.png"
 import user from "../../assets/add-user.png"
@@ -13,8 +15,13 @@ const Faq = () => {
   return (
     <section id="faq">
         <div className="container faq"> 
-            <div className="container-right">
-                <h1>Getting Started</h1>
+            <div className="u-title">
+                <ImBooks color="#00B0FF" size={30} className="icon"/>
+                <h2>- GET STARTED -</h2>
+                <p> TechX has Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam mollis leo at dapibus dictum.
+                    Ut posuere est erat, id semper dui ultricies at.
+                </p>
             </div>
             <div className="container-grid">
                 <GridItem img={rocket} title={"First steps"} />
