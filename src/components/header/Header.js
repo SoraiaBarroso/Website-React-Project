@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <section id='header'>
       <div className='container header'>
-        <div className='header-left'> 
+        <div data-aos="fade-right" className='header-left'> 
           <h1>
             <span>INNOVATIVE WEB DEVELOPMENT</span>
             <span>DESIGNING THE WEB OF TOMORROW,</span>
@@ -26,7 +26,7 @@ const Header = () => {
             <Button text={"How It Works"} btnClass={"btn-orange"} href={"#"}/>
           </div>
         </div>
-        <div className='header-right'>
+        <div data-aos="fade-left" className='header-right'>
           <img src={svgHeader} alt='Header'></img>
         </div>
       </div>

@@ -1,10 +1,88 @@
 #footer{
     margin: 0;
     width: 100%;
-    height: 30vh;
+    height: 36vh;
     background-color: #133771f4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
 
-h1{
-    margin: 0;
+.companyName{
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    width: 55%;
+    align-items: center;
+}
+
+.companyName p{
+    position: relative;
+    padding: .2em 0;
+}
+
+.companyName p::after {
+    content: "";
+    height: 2px;
+    width: 6em;
+    background-color: #fff;
+    position: absolute;
+    left: -40%;
+    bottom: 0;
+}
+
+.terms{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+    height: 100%;
+    justify-content: center;
+}
+
+.terms p{
+    cursor: pointer;
+    text-align: left;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+    height: 3em;
+}
+
+.contact-info p, .contact-info svg{
+    margin: 1em 0;
+}
+
+.contact-info p{
+    padding-left: .3em;
+}
+
+@media screen and (max-width: 650px){
+    .contact, .terms{
+        width: 45%;
+    }  
+}
+
+@media screen and (max-width: 550px){
+    #footer{
+        justify-content: end;
+        align-items: center;
+    }
+    .companyName{
+        display: none;
+    }
 }

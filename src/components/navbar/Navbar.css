@@ -82,7 +82,6 @@
 
 @media screen and (max-width: 815px) {
     .nav-list{
-        border: 1px solid white;
         display: none;
         padding: 0;
         text-align: center;
@@ -99,13 +98,14 @@
 
     .navbar #nav-list-mobile, 
     .navbar #nav-list-mobile-hide{
-        background-color: #ffffffde;
+        background-color: #00183ef5;
         padding: .5rem 0;
         display: block;
         position: absolute;
         left: 5%;
         top: 8rem;
         width: 90%;
+        border-radius: 1em;
         transition: all .5s;
     }
 
@@ -121,7 +121,7 @@
     .navbar #nav-list-mobile li, 
     .navbar #nav-list-mobile-hide li{
         padding: 1.5rem 0;
-        border-bottom: 1px solid #133771f4;
+        border-bottom: 1px solid #fff;
         margin: 0 2rem;
     }
 
@@ -131,6 +131,6 @@
     }
 
     .navbar #nav-list-mobile li a{
-        color: #133771f4;
+        color: #fff;
     }
 }

@@ -3,7 +3,7 @@ import "./DownloadBtn.css"
 
 const DownloadBtn = ({icon, name}) => {
     return(
-        <div className="btn-dwn">
+        <div data-aos="fade-in" className="btn-dwn">
             <div>
                 {icon}
             </div>

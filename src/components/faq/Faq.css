@@ -7,6 +7,7 @@
     flex-direction: column;
     background-color: #f4f7fa;
     position: relative;
+    padding-bottom: 4em;
 }
 
 .container-grid{
@@ -38,6 +39,7 @@
 }
 
 .grid-item h1{
+    padding-top: 1em;
     font-size: 2em;
     color: #133771;
     text-align: center;
