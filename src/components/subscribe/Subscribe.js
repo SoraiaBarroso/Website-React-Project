@@ -19,14 +19,14 @@ const Subscribe = () => {
                     <input className="btn-input" type="submit" onClick={HandleBtn} value="Send"/>
                 </form>
             </div>
-            <div className="social-icon">
-                <div data-aos="fade-in" className="icon-sb">
+            <div data-aos="fade-in" className="social-icon">
+                <div className="icon-sb">
                     <AiOutlineInstagram size={25} color="white"/>
                 </div>
-                <div data-aos="fade-in" className="icon-sb">
+                <div className="icon-sb">
                     <AiOutlineTwitter size={25} color="white" />
                 </div>
-                <div data-aos="fade-in" className="icon-sb">
+                <div className="icon-sb">
                     <BiLogoFacebookCircle size={25} color="white"/>
                 </div>
             </div>

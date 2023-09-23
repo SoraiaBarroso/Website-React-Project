@@ -23,7 +23,7 @@ const Faq = () => {
                     Ut posuere est erat, id semper dui ultricies at.
                 </p>
             </div>
-            <div className="container-grid">
+            <div data-aos="zoom-in" className="container-grid">
                 <GridItem img={rocket} title={"First steps"} />
                 <GridItem img={pc} title={"Use our app"} />
                 <GridItem img={user} title={"Your profile"} />
