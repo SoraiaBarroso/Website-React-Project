@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     height: 8rem;
-    margin: 0 3rem;
+    padding: 1rem 3rem;
+    background-color: #133771f4;
 }
 
 .logo{

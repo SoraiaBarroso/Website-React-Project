@@ -29,12 +29,13 @@ const Header = () => {
         <div data-aos="fade-left" className='header-right'>
           <img src={svgHeader} alt='Header'></img>
         </div>
-      </div>
-      <div className='floating-icon'>
+        <div className='floating-icon'>
         <a href='#features'>
           <BsMouse color='#fff' size={25} className='mouse'/>
         </a>
       </div>
+      </div>
+     
     </section>
   )
 }

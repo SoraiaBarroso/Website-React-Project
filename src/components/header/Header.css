@@ -1,9 +1,11 @@
 .header{
-    margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    position: relative;
+    background-color: #133771f4;
+    padding: 8em 0;
 }
 
 .header-left{
@@ -82,10 +84,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 6em;
-    margin-bottom: 4em;
     border: 1px solid #fff;
+    position: absolute;
+    bottom: 5%;
 }
 
 .mouse{
@@ -105,7 +106,6 @@
 
 @media screen and (max-width: 650px){
     .header {
-        margin-top: 2rem;
         flex-direction: column;
     }
     .header-left,
