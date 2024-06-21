@@ -13,6 +13,15 @@ const Navbar = () => {
     setShowMenu(!showMenu)
   }
 
+  // Navigation items array
+  const navItems = [
+      { href: '#', label: 'Home' },
+      { href: '#features', label: 'Features' },
+      { href: '#download', label: 'Download' },
+      { href: '#subscribe', label: 'Subscribe' },
+      { href: '#faq', label: 'Get Started' },
+  ];
+
   return (
     <nav className='container navbar'>
       <div className='logo'>
@@ -20,21 +29,11 @@ const Navbar = () => {
         <p className='logo-text'>Tech<span>X</span></p>
       </div>
       <ul className='nav-list' id={showMenu === true ? "nav-list-mobile" : "nav-list-mobile-hide"}>
-        <li>
-            <a href='#'>Home</a>
-        </li>
-        <li>
-            <a href='#features'>Features</a>
-        </li>
-        <li>
-            <a href='#download'>Dowload</a>
-        </li>
-        <li>
-            <a href='#subscribe'>Subscribe</a>
-        </li>
-        <li>
-            <a href='#faq'>Get Started</a>
-        </li>
+      {navItems.map((item, index) => (
+          <li key={index}>
+            <a href={item.href}>{item.label}</a>
+          </li>
+        ))}
       </ul>
       <div className='menu-icons' onClick={toggleMenu}>
         {
