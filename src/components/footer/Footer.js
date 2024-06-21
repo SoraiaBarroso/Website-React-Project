@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
                 <div className="contact-info">
                     <BiMailSend color='white' size={20} />
-                    <p>techx@gamil.com</p>
+                    <p>techx@gmail.com</p>
                 </div>
             </div>
         </section>

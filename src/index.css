@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
 
+
 body {
+    overflow-x: hidden;
     font-family:'Helvetica Neue',Helvetica,'Segoe UI',Tahoma,Arial,sans-serif;;
     width: 100%;
     height: 100%;
